@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    scroll-padding-top: 5rem;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -11,6 +14,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 header a {
@@ -32,7 +38,23 @@ header a:hover{
     transition: transform .1s;
 }
 
-main {
+nav {
+    display: flex;
+    gap: 10rem;
+}
+
+body {
+    background: #FFFFFF;
+}
+
+section {
+    border: 1px solid black;
+    height: calc(100vh - 5rem);
+    padding: 2rem;
+}
+
+#CORINGAO {
+    margin-top: 5rem;
     padding: 2rem;
     height: 100%;
     display: flex;
@@ -51,4 +73,26 @@ p {
 
 img {
     max-width: 20rem;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 0.3rem;
+}
+
+th {
+    border: 1px solid black;
+    padding: 0.3rem;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
